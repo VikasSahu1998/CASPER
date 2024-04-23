@@ -52,6 +52,13 @@ app.use('/api/otp', otpRoutes);
 const subscriptionRoutes = require('./routes/subscriptionRoutes');
 app.use('/api/subscription', subscriptionRoutes);
 
+// const requestServiceRoutes = require('./routes/requestServiceRoutes');
+// app.use('/api/requestService', requestServiceRoutes);
+
+const requestRoutes = require('./routes/requestRoutes');
+app.use('/api/request', requestRoutes);
+
+
 
 
 // ====================================port==========================================
