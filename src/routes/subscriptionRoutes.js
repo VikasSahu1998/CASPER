@@ -5,6 +5,8 @@ const subscriptionController = require("../controllers/subscriptionController")
 
 
 router.post("/addSubscription",authenticateToken,checkSubscription,subscriptionController.addUserSubscription)
-router.get("/getSubscription",subscriptionController.getUserSubscription)
+router.post("/getSubscription",authenticateToken,subscriptionController.getUserSubscription)
+router.get("/checkSubscriptions",authenticateToken,subscriptionController.checkSubscriptions)
+
 
 module.exports = router
