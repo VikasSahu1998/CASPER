@@ -4,7 +4,6 @@ const { subscriptionStatus, subscriptionTypes } = require("../../config/constant
 exports.addUserSubscription = async (req, res) => {
     expiryRangeMonth = { Basic: 1, Standard: 6, Advance: 12 }
     try {
-
         let expiryDate = new Date();
         expiryDate.setMonth(expiryDate.getMonth() + expiryRangeMonth[req.body.subscription_type]);
         let newSubscription = {
@@ -12,12 +11,18 @@ exports.addUserSubscription = async (req, res) => {
             subscription_status: subscriptionStatus.ACTIVE,
             expiry_date: expiryDate.toString(),
             subscription_type: req.body.subscription_type,
-            price: req.body.price
+            price: req.body.price,
+            razorpay_payment_id:req.body.razorpay_payment_id
         }
         console.log(newSubscription, "swefr")
-        const subscription = await subscriptionService.addUserSubscription(newSubscription);
+        if (req.body.subscribeAgain && req.body.isSubscribed) {
+            // Forcefully subscribe the user even if already subscribed
+            console.log('Forcefully subscribing the user...');
+          }
+      
+          const subscription = await subscriptionService.addUserSubscription(newSubscription);
+          res.status(201).json(subscription);
 
-        res.status(201).json(subscription);
     } catch (error) {
         console.log(error, "yghj")
         res.status(500).json({ error: "Internal Error" });
