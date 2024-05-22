@@ -16,20 +16,20 @@ const Subscription = db.define("Subscription", {
         allowNull: false // Assuming subscription_status cannot be null
     },
     expiry_date: {
-        type: DataTypes.STRING,
-        allowNull: false // Assuming expiry_date cannot be null
+        type: DataTypes.DATE,
+        
     },
     subscription_type: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming subscription_type cannot be null
+        // allowNull: false // Assuming subscription_type cannot be null
     },
     price: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming price cannot be null
+        // allowNull: false // Assuming price cannot be null
     },
     razorpay_payment_id: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming razorpay_payment_id cannot be null
+        // allowNull: false // Assuming razorpay_payment_id cannot be null
     }
 });
 

@@ -144,20 +144,19 @@ exports.getMyProfile = async (req, res) => {
 
 
 
+
+
 exports.userLogin = async (req, res) => {
     try {
         const user = await userService.getUserByEmail(req.body.email);
 
         if (user) {
-            // Compare the provided password with the hashed password from the database
             const isPasswordMatch = await bcrypt.compare(req.body.password, user.password);
 
             if (isPasswordMatch) {
-                // Omit password from the user object
                 const { password, ...userWithoutPassword } = user.dataValues;
-                // Sign the user object (without the password) to generate the token
                 const token = jwt.sign(userWithoutPassword, jwtconfig.jwtsecretkey, { expiresIn: jwtconfig.tokenExpiration });
-                // Send the token in the response
+
                 return res.status(200).json({ message: "User Login Successfully", success: true, jwttoken: token });
             } else {
                 return res.status(404).json({ message: "Incorrect Password", success: false });

@@ -5,23 +5,33 @@ exports.addUserSubscription = async (subscriptionData) => {
     
 }
 
-exports.getUserSubscription = async (user_id,subscription_type) => {
+exports.getUserSubscription = async (user_id) => {
  return Subscription.findAll({
     where: {
-        user_id: user_id,
-        subscription_type:subscription_type
+        user_id: user_id
     },
     order: [['expiry_date', 'DESC']]
  })
+} 
+
+exports.getAllUserSubscriptions = async (user_id) => {
+    return Subscription.findAll({
+        where: { user_id },
+        order: [['expiry_date', 'DESC']]
+    });
 }
 
-exports.checkSubscriptions = async (user_id) => {
-    return Subscription.findAll({
-       where: {
-           user_id: user_id,
+exports.getSubscriptionbyId = async (subscriptionId) =>{
+    return Subscription.findByPk(subscriptionId)
+}
+
+// exports.checkSubscriptions = async (user_id) => {
+//     return Subscription.findAll({
+//        where: {
+//            user_id: user_id,
           
-       },
-       order: [['expiry_date', 'DESC']]
-    })
-   }
+//        },
+//        order: [['expiry_date', 'DESC']]
+//     })
+//    }
 

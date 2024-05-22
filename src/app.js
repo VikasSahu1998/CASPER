@@ -58,6 +58,9 @@ app.use('/api/subscription', subscriptionRoutes);
 const requestRoutes = require('./routes/requestRoutes');
 app.use('/api/request', requestRoutes);
 
+const nocasRoutes = require('./routes/nocasRoutes');
+app.use('/api/nocas', nocasRoutes);
+
 
 
 
