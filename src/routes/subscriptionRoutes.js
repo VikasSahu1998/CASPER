@@ -8,6 +8,7 @@ router.post("/addSubscription",authenticateToken,subscriptionController.addUserS
 router.post("/getSubscription",authenticateToken,subscriptionController.getUserSubscription)
 router.get("/checkSubscriptions",authenticateToken,subscriptionController.checkSubscriptions)
 router.get("/getAllsubscriptions", authenticateToken, subscriptionController.getAllUserSubscriptions);
+router.get("/getAllSubscription", subscriptionController.getAllSubscription);
 
 
 module.exports = router

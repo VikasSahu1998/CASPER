@@ -22,3 +22,17 @@ exports.createRequest = async (req, res) => {
         return res.status(500).json({ error: "Internal server error" });
     }
 };
+
+exports.getAllService = async (req, res) => {
+    try {
+        const user_id = req.query.user_id; // Extract user_id from query parameters
+        if (!user_id) {
+            return res.status(400).json({ error: "user_id is required" });
+        }
+        const services = await requestService.getAllService(user_id);
+        res.status(200).json(services);
+    } catch (error) {
+        console.error("Error fetching services:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+};

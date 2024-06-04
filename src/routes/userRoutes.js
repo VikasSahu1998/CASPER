@@ -16,4 +16,7 @@ router.post("/userLogin",usercontroller.userLogin)
 router.post('/updatePassword',usercontroller.updatePassword)
 
 router.post("/changePassword",authenticateToken,usercontroller.changePassword);
+
+router.get("/getAllUsers", usercontroller.getAllUsers);
+
 module.exports = router;

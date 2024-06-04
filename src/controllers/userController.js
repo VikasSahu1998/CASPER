@@ -59,16 +59,16 @@ exports.createUSer = async (req, res) => {
     }
 };
 
-
 exports.getAllUsers = async (req, res) => {
     try {
-        const users = await userService.getAllUsers();
+        const users = await User.findAll();
         res.status(200).json(users);
-
     } catch (error) {
-        res.status(500).json({ error: "Internal Server Error" });
+        console.error("Error fetching users:", error);
+        res.status(500).json({ message: "Internal server error" });
     }
 };
+
 
 exports.updateUser = async (req, res) => {
     const userId = req.body.id;

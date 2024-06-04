@@ -31,6 +31,18 @@ const Nocas = db.define("Nocas", {
         type: DataTypes.STRING,
         allowNull: false // Assuming site_elevation cannot be null
     },
+    distance: {
+        type: DataTypes.STRING,
+        allowNull: false // Assuming site_elevation cannot be null
+    },
+    permissible_elevation: {
+        type: DataTypes.STRING,
+        allowNull: false // Assuming site_elevation cannot be null
+    },
+    permissible_height:{
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     snapshot: {
         type: DataTypes.STRING // Assuming snapshot can be null
     }

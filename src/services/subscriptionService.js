@@ -21,6 +21,7 @@ exports.getAllUserSubscriptions = async (user_id) => {
     });
 }
 
+
 exports.getSubscriptionbyId = async (subscriptionId) =>{
     return Subscription.findByPk(subscriptionId)
 }

@@ -1,6 +1,7 @@
 const subscriptionService = require("../../src/services/subscriptionService");
 const { subscriptionStatus, subscriptionTypes } = require("../../config/constant");
 const moment = require('moment');
+const Subscription = require("../models/subscription");
 
 exports.addUserSubscription = async (req, res) => {
     expiryRangeMonth = {OneTime:0 ,Basic: 1, Standard: 6, Advance: 12 }
@@ -52,6 +53,16 @@ exports.getAllUserSubscriptions = async (req, res) => {
     } catch (error) {
         console.error("Error fetching subscriptions:", error);
         res.status(500).json({ error: "Internal Server Error" });
+    }
+};
+
+exports.getAllSubscription = async (req, res) => {
+    try {
+        const subscription = await Subscription.findAll();
+        res.status(200).json(subscription);
+    } catch (error) {
+        console.error("Error fetching users:", error);
+        res.status(500).json({ message: "Internal server error" });
     }
 };
 
