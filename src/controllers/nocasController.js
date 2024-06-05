@@ -21,6 +21,7 @@ exports.createNocas = async (req, res) => {
             latitude: req.body.latitude, // Assigning values to the correct keys
             longitude: req.body.longitude, // Assigning values to the correct keys
             site_elevation: req.body.site_elevation,
+            // snapshot:req.body.snapshot,
             distance:req.body.distance,
             permissible_elevation:req.body.permissible_elevation,
             permissible_height:req.body.permissible_height // Make sure site_elevation is present in the request body
