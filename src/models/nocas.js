@@ -44,8 +44,9 @@ const Nocas = db.define("Nocas", {
         allowNull: false
     },
     snapshot: {
-        type: DataTypes.STRING // Assuming snapshot can be null
-    }
+        type: DataTypes.STRING,
+        allowNull: true
+    },
 });
 
 module.exports = Nocas;

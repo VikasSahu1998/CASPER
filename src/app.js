@@ -1,9 +1,25 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const app = express();
 const cors = require('cors');
 const dotenv = require('dotenv');
 const sequelize = require('../config/database');
+const compression = require('compression');
+
+const fs = require('fs');
+
+const app = express();
+
+
+app.use(cors());
+
+dotenv.config();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
+
+
+
 
 // ==============================middleware==============================================
 
@@ -12,18 +28,12 @@ app.use(cors());
 dotenv.config();
 app.use(bodyParser.json());
 
-
-
-
 // ===============================DB connection===========================================
 let PORT = process.env.PORT || 3001;
 
 sequelize.sync()
   .then(() => {
     console.log('Connected to PostgreSQL database');
-    app.listen(PORT, () => {
-      console.log(`Server is running on port ${PORT}`);
-    });
   })
   .then(() => {
     console.log('Users table created successfully');
@@ -40,11 +50,8 @@ app.use('/api/user', userRoutes);
 const adminRoutes = require('./routes/adminRoutes');
 app.use('/api/admin', adminRoutes);
 
-
 const airportRoutes = require('./routes/airportsRoutes');
-// Use airportRoutes for handling airport-related routes
 app.use('/api', airportRoutes);
-
 
 const otpRoutes = require('./routes/otpRoutes');
 app.use('/api/otp', otpRoutes);
@@ -52,16 +59,13 @@ app.use('/api/otp', otpRoutes);
 const subscriptionRoutes = require('./routes/subscriptionRoutes');
 app.use('/api/subscription', subscriptionRoutes);
 
-// const requestServiceRoutes = require('./routes/requestServiceRoutes');
-// app.use('/api/requestService', requestServiceRoutes);
-
 const requestRoutes = require('./routes/requestRoutes');
 app.use('/api/request', requestRoutes);
 
 const nocasRoutes = require('./routes/nocasRoutes');
 app.use('/api/nocas', nocasRoutes);
 
-
-
-
 // ====================================port==========================================
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
