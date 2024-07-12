@@ -44,7 +44,7 @@ const Nocas = db.define("Nocas", {
         allowNull: false
     },
     snapshot: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT, // Store the base64 string of the image
         allowNull: true
     },
 });

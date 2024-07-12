@@ -4,19 +4,20 @@ const Nocas = require("../models/nocas");
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
+const { request } = require("http");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadDir = './uploads';
+    const uploadDir = path.join(__dirname, '..', 'uploads');
     fs.mkdirSync(uploadDir, { recursive: true });
     cb(null, uploadDir);
   },
   filename: (req, file, cb) => {
-    const { request_id } = req.body;
-    if (!request_id) {
-      return cb(new Error('Request ID is required'));
+    const { user_id } = req.body;
+    if (!user_id) {
+      return cb(new Error('User ID is required'));
     }
-    cb(null, `${request_id}.png`);
+    cb(null, `${request_id}.png`); // Ensure .png extension is added to the filename
   }
 });
 
@@ -52,7 +53,7 @@ exports.createNocas = async (req, res) => {
       latitude,
       longitude,
       site_elevation,
-      snapshot: `/uploads/${request_id}.png`,
+      snapshot: path.join('/uploads', `${request_id}.png`), // Ensure .png extension is added to the snapshot path
       distance,
       permissible_elevation,
       permissible_height
@@ -98,7 +99,7 @@ exports.createOneTime = async (req, res) => {
       latitude,
       longitude,
       site_elevation,
-      snapshot: `/uploads/${request_id}.png`,
+      snapshot: path.join('/uploads', `${request_id}.png`), // Ensure .png extension is added to the snapshot path
       distance,
       permissible_elevation,
       permissible_height

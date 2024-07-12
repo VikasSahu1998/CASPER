@@ -7,21 +7,15 @@ const authenticateToken = (req,res,next) =>{
   // console.log(token)
 
   if (!actualToken) {
-    
-
     return res.status(401).json({ message: "Unauthrorized: Token not provided"});
   }
-  
-
   jwt.verify(actualToken,jwtconfig.jwtsecretkey,(err,user) => {
     if(err){
-      
         return res.status(403).json({ message: "Forbidden: Invalid token"});
     }
     else{
       console.log(actualToken,"error",user)
     }
-
     req.user = user;
     next();
   });
