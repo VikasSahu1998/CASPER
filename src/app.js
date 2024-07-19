@@ -29,7 +29,7 @@ dotenv.config();
 app.use(bodyParser.json());
 
 // ===============================DB connection===========================================
-let PORT = process.env.PORT || 3001;
+let PORT = process.env.PORT || 3003;
 
 sequelize.sync()
   .then(() => {
@@ -66,6 +66,9 @@ const nocasRoutes = require('./routes/nocasRoutes');
 app.use('/api/nocas', nocasRoutes);
 
 // ====================================port==========================================
+
+
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

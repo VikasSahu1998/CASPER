@@ -13,6 +13,6 @@ router.post('/createNocas', authenticateToken, checkSubscription, checkNocas, no
 router.post('/createOneTime', authenticateToken, nocasController.createOneTime);
 router.get('/getAllNocasData', authenticateToken, nocasController.getAllNocasData);
 router.get('/getAllPermissible', nocasController.getAllPermissible);
-router.post('/save-screenshot', upload.single('image'), nocasController.saveScreenshot);
+router.post('/save-screenshot', nocasController.uploadScreenshot, nocasController.saveScreenshot);
 
 module.exports = router;
