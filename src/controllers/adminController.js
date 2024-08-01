@@ -1,5 +1,4 @@
 const adminService = require("../services/adminService");
-
 exports.createAdmin = async (req,res) => {
     try{
         const admin = await adminService.createAdmin(req.body);

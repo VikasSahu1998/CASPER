@@ -25,7 +25,7 @@ exports.createRequest = async (req, res) => {
 
 exports.getAllService = async (req, res) => {
     try {
-        const user_id = req.query.user_id; // Extract user_id from query parameters
+        const user_id = req.query.user_id; 
         if (!user_id) {
             return res.status(400).json({ error: "user_id is required" });
         }

@@ -9,42 +9,42 @@ const Nocas = db.define("Nocas", {
     },
     user_id: {
         type: DataTypes.UUID,
-        allowNull: false // Assuming user_id cannot be null
+        allowNull: false
     },
     city: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming city cannot be null
+        allowNull: false 
     },
     airport_name: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming airport_name cannot be null
+        allowNull: false 
     },
     latitude: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming latitude cannot be null
+        allowNull: false 
     },
     longitude: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming longitude cannot be null
+        allowNull: false 
     },
     site_elevation: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming site_elevation cannot be null
+        allowNull: false
     },
     distance: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming site_elevation cannot be null
+        allowNull: false 
     },
     permissible_elevation: {
         type: DataTypes.STRING,
-        allowNull: false // Assuming site_elevation cannot be null
+        allowNull: false 
     },
     permissible_height:{
         type: DataTypes.STRING,
         allowNull: false
     },
     snapshot: {
-        type: DataTypes.STRING, // Store the base64 string of the image
+        type: DataTypes.STRING, 
         allowNull: true
     },
 });

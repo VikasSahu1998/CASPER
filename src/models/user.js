@@ -11,14 +11,12 @@ const User = db.define("User", {
     password: { type: DataTypes.STRING }
 });
 
-
 User.beforeCreate(async (user, options) => {
     if (user.password) {
         const hashedPassword = await bcrypt.hash(user.password, 10); 
         user.password = hashedPassword;
     }
 });
-
 
 User.beforeUpdate(async (user, options) => {
     if (user.changed('password')) {

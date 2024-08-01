@@ -1,6 +1,4 @@
 const Otp = require("../models/otp");
-
-// Function to save OTP data
 const saveOtp = async (otpData, id) => {
     try {
         let saveotp = await Otp.findOne({ where: { user_id: otpData.user_id } });
@@ -14,8 +12,6 @@ const saveOtp = async (otpData, id) => {
         throw error;
     }
 };
-
-// Function to get OTP data by user ID
 const getOtpByUserId = async (userId) => {
     try {
         const otpData = await Otp.findOne({ where: { user_id: userId } });
@@ -38,7 +34,7 @@ exports.updatePassword = async (userId, newPassword) => {
       if (!user) {
         throw new Error('User not found');
       }
-      user.password = newPassword; // Assuming you have a field named 'password' in your User model
+      user.password = newPassword;
       await user.save();
       return { message: 'Password updated successfully' };
     } catch (error) {

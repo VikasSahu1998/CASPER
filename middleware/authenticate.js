@@ -1,11 +1,8 @@
 const  jwt  = require("jsonwebtoken");
 const  jwtconfig  =  require("../config/jwt");
-
 const authenticateToken = (req,res,next) =>{
   const token = req.header("Authorization");
   let actualToken = token.split(" ")[1]
-  // console.log(token)
-
   if (!actualToken) {
     return res.status(401).json({ message: "Unauthrorized: Token not provided"});
   }
@@ -20,5 +17,4 @@ const authenticateToken = (req,res,next) =>{
     next();
   });
 }
-
 module.exports = authenticateToken;

@@ -7,7 +7,6 @@ exports.addUserSubscription = async (req, res) => {
     expiryRangeMonth = {OneTime:0 ,Basic: 1, Standard: 6, Advance: 12 }
     try {
         const expiryDate = moment().add(expiryRangeMonth[req.body.subscription_type], 'months').format('YYYY-MM-DD');
-        
         let newSubscription = {
             user_id: req.user.id,
             subscription_status: subscriptionStatus.ACTIVE,
@@ -16,20 +15,16 @@ exports.addUserSubscription = async (req, res) => {
             price: req.body.price,
             razorpay_payment_id:req.body.razorpay_payment_id
         }
-        console.log(newSubscription, "swefr")
         if (req.body.subscription_type == "OneTime"){
             newSubscription.subscription_status = subscriptionStatus.EXPIRED 
         }
         if (req.body.subscribeAgain && req.body.isSubscribed) {
-            // Forcefully subscribe the user even if already subscribed
-            console.log('Forcefully subscribing the user...');
           }
       
           const subscription = await subscriptionService.addUserSubscription(newSubscription);
           res.status(201).json(subscription);
 
     } catch (error) {
-        console.log(error, "yghj")
         res.status(500).json({ error: "Internal Error" });
     }
 };
@@ -44,9 +39,8 @@ exports.getUserSubscription = async (req, res) => {
     }
 };
 
-// subscriptionController.js
 exports.getAllUserSubscriptions = async (req, res) => {
-    const user_id = req.query.user_id; // Extract user_id from query parameters
+    const user_id = req.query.user_id;
     try {
         const subscriptions = await subscriptionService.getAllUserSubscriptions(user_id);
         res.status(200).json(subscriptions);
@@ -88,7 +82,6 @@ exports.checkSubscriptions = async (req, res) => {
         }
 
     } catch (error) {
-        console.log(error, "yghj")
         res.status(500).json({ error: "Internal Error" });
     }
 };
