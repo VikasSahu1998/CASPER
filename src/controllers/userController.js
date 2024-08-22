@@ -3,7 +3,7 @@ const User = require("../models/user")
 const jwt = require("jsonwebtoken")
 const jwtconfig = require('../../config/jwt')
 const bcrypt = require('bcrypt');
-
+ 
 exports.createUSer = async (req, res) => {
     try {
         const user = await User.findOne({
@@ -25,7 +25,25 @@ exports.createUSer = async (req, res) => {
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
-
+ 
+exports.checkPhoneNumberExists = async (req, res) => {
+    try {
+        const { phone_number } = req.body;
+        const user = await User.findOne({ where: { phone_number } });
+        if (user) {
+            console.log("User found:", user);
+            return res.status(200).json({ exists: true });
+        } else {
+            console.log("User not found");
+            return res.status(200).json({ exists: false });
+        }
+    } catch (error) {
+        console.error("Error checking phone number:", error);
+        res.status(500).json({ message: 'Internal Server Error' });
+    }
+};
+ 
+ 
 exports.getAllUsers = async (req, res) => {
     try {
         const users = await User.findAll();
@@ -35,8 +53,8 @@ exports.getAllUsers = async (req, res) => {
         res.status(500).json({ message: "Internal server error" });
     }
 };
-
-
+ 
+ 
 exports.updateUser = async (req, res) => {
     const userId = req.body.id;
     try {
@@ -47,13 +65,13 @@ exports.updateUser = async (req, res) => {
         else {
             let updatedUser = await userService.getUserById(userId);
             res.status(200).json({ updatedUser, message: "User Updated Successfully" });
-
+ 
         }
     } catch (error) {
         res.status(500).json({ message: "Internal Server Error" });
     }
 };
-
+ 
 exports.deleteUser = async (req, res) => {
     const userId = req.params.id;
     try {
@@ -66,12 +84,12 @@ exports.deleteUser = async (req, res) => {
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
-
-
+ 
+ 
 exports.getUserById = async (req, res) => {
     try {
         const user = await userService.getUserById(req.body.id);
-
+ 
         if (user) {
             res.status(201).json(user);
         }
@@ -82,24 +100,24 @@ exports.getUserById = async (req, res) => {
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
-
-
+ 
+ 
 exports.getMyProfile = async (req, res) => {
     try {
         const user = await userService.getUserById(req.user.id);
-
+ 
         if (user) {
             res.status(201).json(user);
         }
         else {
             res.status(409).json({ message: "User not found" });
         }
-
+ 
     } catch (error) {
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
-
+ 
 exports.userLogin = async (req, res) => {
     try {
         const user = await userService.getUserByEmail(req.body.email);
@@ -120,7 +138,7 @@ exports.userLogin = async (req, res) => {
         return res.status(500).json({ error: "Internal Server Error", success: false });
     }
 };
-
+ 
 exports.updatePassword = async (req, res) => {
     const { email, password } = req.body;
     try {
@@ -136,7 +154,7 @@ exports.updatePassword = async (req, res) => {
         return res.status(500).json({ error: "Internal Server Error", success: false });
     }
 };
-
+ 
 exports.changePassword = async (req, res) => {
     const { currentPassword, newPassword } = req.body;
     try {

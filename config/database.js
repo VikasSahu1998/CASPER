@@ -1,19 +1,28 @@
 
+// const {Sequelize} = require("sequelize");
+// const sequelize = new Sequelize(
+//     "NOCAS_database",
+//     "postgres",
+//     "postgres",
+//     {
+//         host: "mydb.cxeos2wmmsqf.us-east-2.rds.amazonaws.com",
+//         dialect: "postgres",
+//         port: 5432 
+//     }
+// );
+ 
+// module.exports = sequelize;
+ 
+ 
+ 
 const {Sequelize} = require("sequelize");
-const sequelize = new Sequelize(
-    "NOCAS_database",
-    "postgres",
-    "postgres",
+const sequelize =new Sequelize(
+    "backend",
+    "test",
+    "password",
     {
-        host: "mydb.cxeos2wmmsqf.us-east-2.rds.amazonaws.com",
+        host : "localhost",
         dialect: "postgres",
-        port: 5432 // Ensure this is the correct port
     }
 );
- 
- 
 module.exports = sequelize;
- 
- 
- 
- 
