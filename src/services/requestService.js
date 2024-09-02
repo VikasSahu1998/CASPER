@@ -7,6 +7,13 @@ exports.createRequest = async (requestData) => {
 exports.getAllService = async (user_id) => {
     return Request.findAll({
         where: { user_id },
-        
+
     });
+}
+
+exports.getAllServiceRequests = async (requestData) => {
+
+    return Request.findAll(requestData);
+
+
 }
