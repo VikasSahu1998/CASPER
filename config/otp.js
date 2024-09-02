@@ -17,13 +17,13 @@ const sendOtp = async (email, otp) => {
         to: email,
         subject: "Resetting Your Casper Account Password!",
         html: `
-        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resetting Your Casper Account Password!</title>
+  <title>Verify your login</title>
   <!--[if mso]><style type="text/css">body, table, td, a { font-family: Arial, Helvetica, sans-serif !important; }</style><![endif]-->
 </head>
 
@@ -37,23 +37,24 @@ const sendOtp = async (email, otp) => {
             <tbody>
               <tr>
                 <td style="padding: 40px 0px 0px;">
-                  <div style="text-align: left;">
-                    <div style="padding-bottom: 20px;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4mHCqV6RQTwJIAON-ZK6QN9rdxF4YK_fLA&amp;s" alt="CASPER"
-                        style="width: 56px;">
-                        </div>
+                  <div style="text-align: center;">
+                    <div style="padding-bottom: 20px;"><img
+                        src="https://www.cognitivenavigation.com/wp-content/uploads/2024/09/CASPER-Cognitive_Logo.png"
+                        alt="Cognitive Navigation Pvt. Ltd" style="width: 100px;"></div>
                   </div>
-                  <div style="padding: 20px; background-color: rgb(255, 255, 255);">
-                    <div style="color: rgb(0, 0, 0); text-align: left;">
-                      <h1 style="margin: 1rem 0">Verification code</h1>
-                      <p style="padding-bottom: 16px">Please use the verification code below to Reset Password.</p>
-                      <p style="padding-bottom: 16px"><strong style="font-size: 130%">${otp}</strong></p>
-                      <p style="padding-bottom: 16px">If you didn't request this, you can ignore this email.</p>
-                      <p style="padding-bottom: 16px">Thanks,<br>The Casper team</p>
-                      <p style="padding-bottom: 16px">Note: This is a system generated email. Please do not reply to this mail id.</p>
+                  <div style="padding: 20px; background-color: rgb(60, 15, 163);">
+                    <div style="color: #FFFFFF; text-align: left;">
+                      <h1 style="margin: 1rem 0;  color: rgb(255, 255, 255);">Verification code</h1>
+                      <p style="padding-bottom: 16px color: #FFFFFF;">We received a request to reset your password. To proceed, please use the One-Time Password (OTP) provided below.</p>
+                      <p style="padding-bottom: 16px color: #FFFFFF;"><strong style="font-size: 130%">Your OTP: ${otp}</strong></p>
+                      <p style="padding-bottom: 16px color: #FFFFFF;">For your security, do not share this OTP with anyone.</p>
+
+                      <p style="padding-bottom: 16px color: #FFFFFF;">Thanks,<br>The Casper team</p>
+                      <p style="padding-bottom: 16px color: #FFFFFF;">Note:Please do not reply to this email.</p>
                     </div>
                   </div>
-                  <div style="padding-top: 20px; color: rgb(153, 153, 153); text-align: center;">
+                  <div style="padding-top: 20px; color: rgb(0, 0, 0); text-align: center;">
+                    <a href="https://www.cognitivenavigation.com/" style="padding-bottom: 16px">Developed by Cognitive Navigation Pvt. Ltd</a>
                     <p style="padding-bottom: 16px">Made with ♥ in India</p>
                   </div>
                 </td>
