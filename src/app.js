@@ -54,6 +54,9 @@ app.use('/api/request', requestRoutes);
  
 const nocasRoutes = require('./routes/nocasRoutes');
 app.use('/api/nocas', nocasRoutes);
+
+const geoJsonRoutes = require('./routes/geojsonRoutes');
+app.use('/api/geojson', geoJsonRoutes);
  
  
 const uploadDir = path.join(__dirname, '../uploads');
