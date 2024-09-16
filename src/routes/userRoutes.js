@@ -12,6 +12,5 @@ router.post('/updatePassword',usercontroller.updatePassword)
 router.post("/changePassword",authenticateToken,usercontroller.changePassword);
 router.get("/getAllUsers", usercontroller.getAllUsers);
 router.post('/check-phone-number', usercontroller.checkPhoneNumberExists);
- 
 
 module.exports = router;

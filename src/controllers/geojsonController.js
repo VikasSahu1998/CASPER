@@ -1,5 +1,5 @@
 const GeoJsonService = require('../services/geojsonService');
- 
+
 class GeoJsonController {
   static async getGeoJsonFile(req, res) {
     const { filename } = req.params;
@@ -11,5 +11,5 @@ class GeoJsonController {
     }
   }
 }
- 
+
 module.exports = GeoJsonController;

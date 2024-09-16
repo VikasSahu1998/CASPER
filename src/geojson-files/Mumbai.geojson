@@ -1,6 +1,6 @@
 {
      "type": "FeatureCollection",
-     "name": "VABB_CCZM",
+     "name": "Mumbai",
      "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
      "features": [
           { "type": "Feature", "properties": { "name": "NOC Required", "Color": "red" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 72.850019615263506, 19.266614033718099 ], [ 72.850019615263506, 19.266614033718099 ], [ 72.883371693081102, 19.266624295372399 ], [ 72.883426898320593, 19.249976423741799 ], [ 72.850080352161896, 19.2499553038753 ], [ 72.850019615263506, 19.266614033718099 ] ] ] ] } },

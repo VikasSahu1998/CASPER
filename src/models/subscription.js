@@ -9,36 +9,31 @@ const Subscription = db.define("Subscription", {
     },
     user_id: {
         type: DataTypes.UUID,
-        allowNull: false
+        allowNull: false 
     },
     subscription_status: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false 
     },
     expiry_date: {
         type: DataTypes.DATE,
-        allowNull: true
     },
     subscription_type: {
         type: DataTypes.STRING,
-        allowNull: false
     },
     price: {
         type: DataTypes.STRING,
-        allowNull: true
     },
     razorpay_payment_id: {
         type: DataTypes.STRING,
-        allowNull: true
     },
-    request_count: {
+    allowed_requests: {
         type: DataTypes.INTEGER,
-        defaultValue: 0, // Initialize request count to 0
-        allowNull: false
+        defaultValue: 0
     },
-    request_limit: {
+    remaining_requests: {
         type: DataTypes.INTEGER,
-        allowNull: false, // Request limit will be set based on subscription type
+        defaultValue: 0
     }
 });
 

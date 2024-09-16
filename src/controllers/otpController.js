@@ -3,7 +3,6 @@ const { sendOtp, generateOTP } = require('../../config/otp');
 const userService = require("../services/userService")
 exports.sendOtp = async (req, res) => {
     const { email } = req.body;
-    console.log(email,"gyhbj")
         try {
             const user = await userService.getUserByEmail(email);
             if(user){
@@ -11,7 +10,6 @@ exports.sendOtp = async (req, res) => {
                     const otp = generateOTP();
                     await sendOtp(user.email, otp);
                     let otpData = {user_id:user.id,otp:otp}
-                    console.log(otpData,"otpdata")
                     otpService.saveOtp(otpData,user.id);
                     res.status(200).json({ message: 'OTP sent successfully.' });
                 } catch (error) {

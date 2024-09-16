@@ -5,7 +5,7 @@ const authenticateToken = require('../../middleware/authenticate');
 const checkNocas = require('../../middleware/nocas');
 const checkSubscription = require('../../middleware/subscription');
 
-router.post('/createNocas', authenticateToken, checkSubscription, checkNocas, nocasController.createNocas);
+router.post('/createNocas', authenticateToken, checkSubscription,  nocasController.createNocas);
 router.post('/createOneTime', authenticateToken, nocasController.createOneTime);
 router.get('/getAllNocasData', authenticateToken, nocasController.getAllNocasData);
 router.get('/getAllPermissible', nocasController.getAllPermissible);

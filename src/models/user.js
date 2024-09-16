@@ -8,7 +8,8 @@ const User = db.define("User", {
     phone_number: { type: DataTypes.STRING },
     address: { type: DataTypes.STRING },
     email: { type: DataTypes.STRING, unique: true },
-    password: { type: DataTypes.STRING }
+    password: { type: DataTypes.STRING },
+    active_susbscription_id:{type: DataTypes.STRING}
 });
 
 User.beforeCreate(async (user, options) => {

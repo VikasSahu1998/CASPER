@@ -1,0 +1,1686 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Puri",
+        "airportName": "PURI AIRPORT/Puri/BBI",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.79, 85.75]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Mumbai",
+        "airportName": "Chhatrapati Shivaji Maharaj International Airport/Mumbai/BOM",
+        "siteElevation": 40
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.09155556, 72.86597222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Coimbatore",
+        "airportName": "Coimbatore Airport/Coimbatore/CJB",
+        "siteElevation": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.02691111, 77.04180278]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ahemdabad",
+        "airportName": "Sardar Vallabhbhai Patel International Airport/Ahemdabad/AMD",
+        "siteElevation": 189
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.07119167, 72.62643333]
+      }
+    },
+ 
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Akola",
+        "airportName": "Akola Airport/Akola/AKD",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.69851583, 77.05776056]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Chennai",
+        "airportName": "Chennai International Airport/Chennai/MAA",
+        "siteElevation": 54
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.99510000, 80.17360278]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Delhi",
+        "airportName": "Indira Gandhi International Airport/Delhi/DEL",
+        "siteElevation": 778
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.61, 77.20]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Guwahati",
+        "airportName": "Lokpriya Gopinath Bordoloi International Airport/Guwahati/GAU",
+        "siteElevation": 163
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.10502222, 91.58543889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Hyderabad",
+        "airportName": "Rajiv Gandhi International Airport/Hyderabad/HYD",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.24055556, 78.42888889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jaipur",
+        "airportName": "Jaipur International Airport/Jaipur/JAI",
+        "siteElevation": 1268
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.82417278, 75.80247833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Nagpur",
+        "airportName": "Dr. Babasaheb Ambedkar International Airport/Nagpur/NAG",
+        "siteElevation": 1033
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.09172500, 79.04819722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Thiruvananthapuram",
+        "airportName": "Trivandrum International Airport/Thiruvananthapuram/TRV",
+        "siteElevation": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.49319444, 76.90915833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Vadodara",
+        "airportName": "Vadodara Airport/Vadodara/BDQ",
+        "siteElevation": 131
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.33004167, 73.21884444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Varanasi",
+        "airportName": "Lal Bahadur Shastri International Airport/Varanasi/VNS",
+        "siteElevation": 270
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.45121111, 82.85860556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Agatti",
+        "airportName": "Agatti Airport/Agatti Island/AGX",
+        "siteElevation": 12
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.82421944, 72.17663611]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Aligarh",
+        "airportName": "Aligarh Airport/Aligarh/IXC",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.86130000, 78.14706944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ambikapur",
+        "airportName": "Ambikapur Airport/Ambikapur/VER",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.99345833, 83.19275222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Amritsar",
+        "airportName": "Sri Guru Ram Dass Jee International Airport/Amritsar/ATQ",
+        "siteElevation": 760
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.71059167, 74.80015556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Aurangabad",
+        "airportName": "Aurangabad Airport/Aurangabad/IXU",
+        "siteElevation": 1917
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.86439444, 75.39756111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Azamgarh",
+        "airportName": "Azamgarh Airport/Azamgarh/AZH",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.15734917, 83.11402361]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Balurghat",
+        "airportName": "Balurghat Airport/Balurghat/RGH",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.26355000, 88.79562750]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Baramati",
+        "airportName": "Baramati Airport/Baramati/",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.22662222, 74.58969722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Belgaum",
+        "airportName": "Belgaum Airport/Belgaum/IXG",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.85840278, 74.61769167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Berhampur",
+        "airportName": "Berhampur Airport/Berhampur/QBM",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.29156278, 84.87916861]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bial",
+        "airportName": "Kempegowda International Airport/Bial/BLR",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.19887167, 77.70547778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bokaro",
+        "airportName": "Bokaro Airport/Bokaro/",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.64352944, 86.14964472]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Cochin",
+        "airportName": "Cochin International Airport/Cochin/COK",
+        "siteElevation": 30
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.15, 76.40]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Deesa",
+        "airportName": "Deesa Airport/Deesa/DDD",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.26777778, 72.20277778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Diburgarh",
+        "airportName": "Diburgarh Airport/Diburgarh/DBG",
+        "siteElevation": 360
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.48231111, 95.01706389]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Diu",
+        "airportName": "Diu Airport/Diu/DIU",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.71379444, 70.92288056]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Durgapur",
+        "airportName": "Durgapur Airport/Durgapur/DGR",
+        "siteElevation": 302
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.62444444, 87.24250000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Gaya",
+        "airportName": "Gaya Airport/Gaya/GAY",
+        "siteElevation": 383
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.74803889, 84.94243611]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Hubli",
+        "airportName": "Hubli Airport/Hubli/HDI",
+        "siteElevation": 2195
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.36183889, 75.08436667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Imphal",
+        "airportName": "Imphal Airport/Imphal/IMF",
+        "siteElevation": 2544
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.76431667, 93.89963889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jabalpur",
+        "airportName": "Jabalpur Airport/Jabalpur/JLR",
+        "siteElevation": 1626
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.18337222, 80.06044444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jewar",
+        "airportName": "Jewar Airport/Jewar/JEW",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.17561111, 77.60624167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jharsaugada",
+        "airportName": "Veer Surendra Sai Airport/Jharsaugada/JRG",
+        "siteElevation": 757
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.91481944, 84.04869167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jogbani",
+        "airportName": "Jogbani Airport/Jogbani/JGN",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.29618056, 87.28654722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kadapa",
+        "airportName": "Kadapa Airport/Kadapa/KDP",
+        "siteElevation": 444
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.51304722, 78.77219167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kandla",
+        "airportName": "Kandla Airport/Kandla/IXY",
+        "siteElevation": 97
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.11220000, 70.10056667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kangra",
+        "airportName": "Kangra Airport/Kangra/DHM",
+        "siteElevation": 2527
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.16473611, 76.26215556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kannur",
+        "airportName": "Kannur International Airport/Kannur/CCJ",
+        "siteElevation": 344
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.91573056, 75.54572222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Keshod",
+        "airportName": "Keshod Airport/Keshod/KSD",
+        "siteElevation": 168
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.31498889, 70.26913889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Khajuraho",
+        "airportName": "Khajuraho Airport/Khajuraho/KUR",
+        "siteElevation": 731
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.81983056, 79.91857500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kishangarh",
+        "airportName": "Kishangarh Airport/Kishangarh/KQH",
+        "siteElevation": 1478
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.60125, 74.81415]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kullu",
+        "airportName": "Kullu Airport/Kullu/KUU",
+        "siteElevation": 3571
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.87681389, 77.15525833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kurnool",
+        "airportName": "Kurnool Airport/Kurnool/KJB",
+        "siteElevation": 1129
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.71475556, 78.16298611]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kushinagar",
+        "airportName": "Kushinagar Airport/Kushinagar/KUN",
+        "siteElevation": 263
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.77277778, 83.89527778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Lalitpur",
+        "airportName": "Lalitpur Airport/Lalitpur/LTP",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.71647083, 78.41612444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Lilabari",
+        "airportName": "Lilabari Airport/Lilabari/LLB",
+        "siteElevation": 331
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.29122778, 94.09352778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Lucknow",
+        "airportName": "Chaudhary Charan Singh International Airport/Lucknow/LKO",
+        "siteElevation": 406
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.76185278, 80.88342778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ludhiana",
+        "airportName": "Ludhiana Airport/Ludhiana/UDN",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.90, 75.85]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Mangalore",
+        "airportName": "Mangalore Airport/Mangalore/IXE",
+        "siteElevation": 318
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.96206111, 74.88978611]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Meerut",
+        "airportName": "Meerut Airport/Meerut/MRT",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.90489833, 77.67712167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Muzaffarpur",
+        "airportName": "Muzaffarpur Airport/Muzaffarpur/MUZ",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.12, 85.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Mysore",
+        "airportName": "Mysore Airport/Mysore/IXM",
+        "siteElevation": 2397
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.30, 76.65]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Nanded",
+        "airportName": "Nanded Airport/Nanded/NAN",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.18103861, 77.32254722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pakyong",
+        "airportName": "Pakyong Airport/Pakyong/PYK",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.13, 88.61]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pantnagar",
+        "airportName": "Pantnagar Airport /Pantnagar/PGH",
+        "siteElevation": 772
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.03214722, 79.47246944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Patna",
+        "airportName": "Jay Prakash Narayan International Airport/Patna/PAT",
+        "siteElevation": 175
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.59361111, 85.09183333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Porbandar",
+        "airportName": "Porbandar Airport/Porbandar/PBD",
+        "siteElevation": 26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.65034583, 69.65880028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Rajamundary",
+        "airportName": "Rajamundary Airport/Rajamundary/",
+        "siteElevation": 156
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.10944444, 81.81944444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Rourkela",
+        "airportName": "Rourkela Airport/Rourkela/ROK",
+        "siteElevation": 673
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.25623889, 84.81460833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Shirdi",
+        "airportName": "Shirdi Airport/Shirdi/SHD",
+        "siteElevation": 1938
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.69083333, 74.37166667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Sholapur",
+        "airportName": "Sholapur Airport/Sholapur/SOL",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.62765278, 75.93403889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Tiruchirapalli",
+        "airportName": "Tiruchirapalli International Airport/Tiruchirapalli/TRZ",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.765, 78.710]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Tirupati",
+        "airportName": "Tirupati Airport/Tirupati/TIR",
+        "siteElevation": 352
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.63296389, 79.54190833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Udaipur",
+        "airportName": "Maharana pratap Airport/Udaipur/UDR",
+        "siteElevation": 1690
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.61754056, 73.89445972]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Utkela",
+        "airportName": "Utkela Airport/Utkela/UTK",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.09765028, 83.18355250]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Vellore",
+        "airportName": "Vellore Airport/Vellore/VEL",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.90810639, 79.06714361]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Warangal",
+        "airportName": "Warangal Airport/Warangal/WAR",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.91703361, 79.59933194]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Calicut",
+        "airportName": "Calicut Airport/Calicut/CCJ",
+        "siteElevation": 343
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.13785000, 75.95057222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Agartala",
+        "airportName": "Agartala Airport/Agartala/IXA",
+        "siteElevation": 56
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.89055556, 91.23916667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Dimapur",
+        "airportName": "Dimapur Airport/Dimapur/DIP",
+        "siteElevation": 493
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.88345756, 93.77135750]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kota",
+        "airportName": "Kota Airport/Kota/KTU",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.16008333, 75.84783333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Madurai",
+        "airportName": "Madurai Airport/Madurai/IXM",
+        "siteElevation": 466
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.83500000, 78.08861111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kolhapur",
+        "airportName": "Kolhapur Airport/Kolhapur/KLH",
+        "siteElevation": 2001
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.66637222, 74.29048056]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kolkata",
+        "airportName": "Netaji Subhas Chandra Bose International Airport/Kolkata/CCU",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.65473944, 88.44672222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bhopal",
+        "airportName": "Raja Bhoj Airport/Bhopal/BHO",
+        "siteElevation": 1721
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.28691944, 77.33696389]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Mopa",
+        "airportName": "Manohar International Airport/Mopa/MOP",
+        "siteElevation": 564
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.74249889, 73.86701028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bhavnagar",
+        "airportName": "Bhavnagar Airport/Bhavnagar/BHU",
+        "siteElevation": 43
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.75425139, 72.19052528]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Dehradun",
+        "airportName": "Dehradun Airport/Dehradun/DED",
+        "siteElevation": 1857
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.19063056, 78.18222222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Hirsar",
+        "airportName": "Hirsar Airport/Hirsar/HSR",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.1833, 75.7167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Hisar",
+        "airportName": "Hisar Airport/Hisar/HSR",
+        "siteElevation": 701
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.15, 75.73]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jamshedpur",
+        "airportName": "Sonari Airport/Jamshedpur/IXW",
+        "siteElevation": 481
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.81455417, 86.16901472]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Deoghar",
+        "airportName": "Deoghar Airport/Deoghar/",
+        "siteElevation": 802
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.44637500, 86.71666667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Donakonda",
+        "airportName": "Donakonda Airport/Donakonda/DND",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.82472167, 79.48233389]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Shimla",
+        "airportName": "Shimla Airport/Shimla/",
+        "siteElevation": 5073
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.08158083, 77.06767694]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Cooch Behar",
+        "airportName": "Cooch Behar Airport/Cooch Behar/COH",
+        "siteElevation": 141
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.32965556, 89.46711389]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bhuvneshwar",
+        "airportName": "Biju Patnaik International Airport/Bhuvneshwar/BBI",
+        "siteElevation": 141
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.26420972, 85.80248556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Tuticorin",
+        "airportName": "Tuticorin Airport/Tuticorin/TCR",
+        "siteElevation": 85
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.72229167, 78.02617500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bengaluru",
+        "airportName": "Kempegowda International Airport/Bengaluru/BLR",
+        "siteElevation": 3002
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.19887167, 77.70547778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jeypore",
+        "airportName": "Jeypore Airport/Jeypore/JYP",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.88055558, 82.55361111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jalgaon",
+        "airportName": "Jalgaon Airport/Jalgaon/JLG",
+        "siteElevation": 842
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.96130556, 75.62459722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Puducherry",
+        "airportName": "Puducherry Airport/Puducherry/PDY",
+        "siteElevation": 141
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.96731944, 79.81143056]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Raipur",
+        "airportName": "Raipur Airport/Raipur/RPR",
+        "siteElevation": 1044
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.18100056, 81.73859194]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ranchi",
+        "airportName": "Birsa Munda Airport/Ranchi/IXR",
+        "siteElevation": 2150
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.31416667, 85.32111111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Surat",
+        "airportName": "Surat Airport/Surat/STV",
+        "siteElevation": 25
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.11604444, 72.74181944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Vijaywada",
+        "airportName": "Vijaywada Airport/Vijaywada/VGA",
+        "siteElevation": 83
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.533597, 80.803283]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Birlamgram",
+        "airportName": "Birlamgram Airport/Birlamgram/",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.45, 75.416667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ayodhya",
+        "airportName": "Ayodhya Airport/Ayodhya/AYD",
+        "siteElevation": 329
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.7980, 82.2080]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Chitrakoot",
+        "airportName": "Chitrakoot Airport/Chitrakoot/CKU",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.2320, 80.8250]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ghaziabad",
+        "airportName": "Hindon Air Force/Ghaziabad/HDO",
+        "siteElevation": 200
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.707778, 77.358333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Ambala",
+        "airportName": "Ambala Air Force/Ambala/",
+        "siteElevation": 275
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.370833, 76.817778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Goa",
+        "airportName": "INS Hansa/Goa/",
+        "siteElevation": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3725, 73.831389]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pune",
+        "airportName": "Lohegaon Air Force/Pune/PNQ",
+        "siteElevation": 560
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.582222, 73.919722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Cimbatore",
+        "airportName": "Sulur Air Force/Cimbatore/",
+        "siteElevation": 410
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.013611, 77.159722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Arakkonnam",
+        "airportName": "INS Rajali/Arakkonnam/",
+        "siteElevation": 75
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.071111, 79.691111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jodhpur",
+        "airportName": "Jodhpur Air Force/Jodhpur/JDH",
+        "siteElevation": 230
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.257222, 73.051667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Leh",
+        "airportName": "Leh Airport/Leh/IXL",
+        "siteElevation": 3500
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.135833, 77.545278]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pathankot",
+        "airportName": "Pathankot Air Force/Pathankot/IXP",
+        "siteElevation": 300
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.233611, 75.634444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Nicobar islands",
+        "airportName": "Car Nicobar Air Force/Nicobar islands/CBD",
+        "siteElevation": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.1525, 92.819722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Tezpur",
+        "airportName": "Tezpur Air Force/Tezpur/TEZ",
+        "siteElevation": 70
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.712222, 92.787222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Thanjavur",
+        "airportName": "Thanjavur Air Force/Thanjavur/TJV",
+        "siteElevation": 60
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.722222, 79.101389]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Agra",
+        "airportName": "Agra Airport/Agra/AGR",
+        "siteElevation": 171
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.161832, 77.970727]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kochi",
+        "airportName": "INS Garuda/Kochi/INS",
+        "siteElevation": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.940000, 76.275000]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Banglore",
+        "airportName": "Yelahanka Air Force/Banglore/",
+        "siteElevation": 920
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.135833, 77.607500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Aizawl",
+        "airportName": "Lengpui Airport/Aizawl/LGU",
+        "siteElevation": 1390
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.2551083, 92.6203583]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Shillong",
+        "airportName": "Barapani Airport/Shillong/SHL",
+        "siteElevation": 2900
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.70361111, 91.97861111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bilaspur",
+        "airportName": "Bilaspur Airport/Bilaspur/PAB",
+        "siteElevation": 899
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.98833333, 82.11111111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Indore",
+        "airportName": "Devi Ahilya Bai Holkar Airport/Indore/IDR",
+        "siteElevation": 1850
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.72166667, 75.80083333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Itanagar",
+        "airportName": "Donyi Polo Airport/Itanagar/ITE",
+        "siteElevation": 390
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.9718, 93.6423]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Gondia",
+        "airportName": "Gondia Airport/Gondia/GOV",
+        "siteElevation": 1000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.52555556, 80.28916667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Nashik",
+        "airportName": "HAL Ozar Airport/Nashik/ISK",
+        "siteElevation": 2000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.1194444, 73.9136111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Jagdalpur",
+        "airportName": "Jagdalpur Airport/Jagdalpur/JGB",
+        "siteElevation": 1800
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.07444444, 82.03694444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Vidyanagar",
+        "airportName": "Jindal Vijayanagar Airport/Vidyanagar/VDY",
+        "siteElevation": 510
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.175, 73.6341]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Kalaburagi",
+        "airportName": "Kalaburagi Airport/Kalaburagi/KBX",
+        "siteElevation": 1562
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.30777778, 76.95805556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Moradabad",
+        "airportName": "Moradabad Airport/Moradabad/MOR",
+        "siteElevation": 615
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.81944444, 78.92333333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Pithoragarh",
+        "airportName": "Naini-Saini Airport/Pithoragarh/PGH",
+        "siteElevation": 5000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.5924583, 80.241775]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Rupsi",
+        "airportName": "Rupsi Airport/Rupsi/RUP",
+        "siteElevation": 127
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.14111111, 89.90666667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Salem",
+        "airportName": "Salem Airport/Salem/SXV",
+        "siteElevation": 968
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.7819444, 78.0644444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Shivamogga",
+        "airportName": "Shivamogga Airport/Shivamogga/SIX",
+        "siteElevation": 1847
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.85472222, 75.61055556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Sindhudurg",
+        "airportName": "Sindhudurg Airport/Sindhudurg/SID",
+        "siteElevation": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.0, 73.5333333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Tezu",
+        "airportName": "Tezu Airport/Tezu/TEZ",
+        "siteElevation": 710
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.9422, 96.1339]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Angul",
+        "airportName": "Angul Airport/Angul/ANJ",
+        "siteElevation": 690
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.9105556, 85.0352778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Koppal",
+        "airportName": "Baldota Koppal Airport/Koppal/KLP",
+        "siteElevation": 1635
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3593111, 76.2192]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Beas",
+        "airportName": "Beas Airport/Beas/BEX",
+        "siteElevation": 750
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.5605556, 75.3411111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Hosur",
+        "airportName": "Hosur Airport/Hosur/HOS",
+        "siteElevation": 2900
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.6611111, 77.7669444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Raigarh",
+        "airportName": "JSPL Raigarh Airport/Raigarh/RIG",
+        "siteElevation": 750
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.8238889, 83.3602778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Puttaparthi",
+        "airportName": "Sri Satya Sai Airport/Puttaparthi/PXI",
+        "siteElevation": 1600
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.1491667, 77.7911111]
+      }
+    }
+  ]
+}

@@ -5,6 +5,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const sequelize = require('../config/database');
 const compression = require('compression');
+
 const fs = require('fs');
  
 const app = express();
@@ -18,16 +19,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
- 
+
 // DB connection
 let PORT = process.env.PORT || 3001;
  
 sequelize.sync()
   .then(() => {
-    console.log('Connected to PostgreSQL database');
   })
   .then(() => {
-    console.log('Users table created successfully');
   })
   .catch(err => {
     console.error('Error connecting to PostgreSQL:', err);
@@ -54,11 +53,13 @@ app.use('/api/request', requestRoutes);
  
 const nocasRoutes = require('./routes/nocasRoutes');
 app.use('/api/nocas', nocasRoutes);
-
+ 
 const geoJsonRoutes = require('./routes/geojsonRoutes');
 app.use('/api/geojson', geoJsonRoutes);
- 
- 
+
+const airportDataRoutes = require('./routes/airportDataRoutes'); // Ensure this path is correct
+app.use('/api/airportinfo', airportDataRoutes);
+
 const uploadDir = path.join(__dirname, '../uploads');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });

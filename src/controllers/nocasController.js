@@ -24,7 +24,6 @@ exports.saveScreenshot = async (req, res) => {
   try {
     const file = req.file;
     if (!file) {
-      console.log('No file uploaded');
       return res.status(400).json({ message: 'No file uploaded' });
     }
     const filePath = path.join(uploadDir, file.filename);
@@ -59,9 +58,7 @@ exports.createNocas = async (req, res) => {
       permissible_height
     };
     const newNocasEntry = await nocasService.createNocas(nocasData);
-    const reqcount = req.isFreeTrial ? req.reqCount + 1 : 0;
-    let remainingCount = 3 - Math.min(req.reqCount, 3);
-    res.status(201).json({ newNocasEntry, freeTrialCount: remainingCount, isOneTimeSubscription: req.isOneTimeSubscription, isSubscribed: req.isSubscribed });
+    res.status(201).json({ newNocasEntry,isSubscribed:req.isSubscribed});
   } catch (error) {
     console.error("Error creating nocas entry:", error);
     res.status(500).json({ error: "Failed to create nocas entry" });
