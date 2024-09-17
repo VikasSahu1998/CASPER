@@ -5,7 +5,7 @@ const sequelize = new Sequelize(
     "postgres",
     "postgres",
     {
-        host: "mydb.cxeos2wmmsqf.us-east-2.rds.amazonaws.com",
+        host: "cognitive-postgresql-dev-db.cbscqceougpf.ap-south-1.rds.amazonaws.com",
         dialect: "postgres",
         port: 5432 
     }
