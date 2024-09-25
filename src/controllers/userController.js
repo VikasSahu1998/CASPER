@@ -138,8 +138,10 @@ exports.getMyProfile = async (req, res) => {
 };
 
 exports.userLogin = async (req, res) => {
+    console.log(req.body,"dfgtyuy")
     try {
         const user = await userService.getUserByEmail(req.body.email);
+        console.log(user)
         if (user) {
             const isPasswordMatch = await bcrypt.compare(req.body.password, user.password);
             if (isPasswordMatch) {
