@@ -1,14 +1,25 @@
-const Admin = require('../models/Admin');
-
+const Admin = require('../models/admin')
+const bcrypt = require('bcryptjs');
 
 const adminData = [
-  { name: 'Admin', email: 'admin@cognitivenavigation.com', password: 'Admin@#2024' },
+  { name: 'demo', email: 'demo@gmail.com', password: 'demo@123' },
   { name: 'test', email: 'test@gmail.com', password: 'test@123' },
 ];
 
+async function isAdminTableEmpty() {
+  try {
+    const count = await Admin.count();
+    return count === 0;
+  } catch (error) {
+    console.error("Error checking if Admin table is empty:", error);
+    return true; // Assume empty in case of error
+  }
+}
 
-
-
+async function hashPassword(password) {
+  const salt = await bcrypt.genSalt(10);
+  return bcrypt.hash(password, salt);
+}
 
 async function insertHardcodedAdminData() {
   try {
