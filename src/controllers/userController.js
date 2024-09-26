@@ -22,7 +22,6 @@ exports.createUSer = async (req, res) => {
         } else {
 
             const { dataValues: newuser } = await userService.createUser(req.body);
-            console.log(newuser, "hjnkml")
             let newSubscription = {
                 user_id: newuser.id,
                 subscription_status: subscriptionStatus.ACTIVE,
@@ -33,11 +32,8 @@ exports.createUSer = async (req, res) => {
                 allowed_requests: 3, // Set allowed requests.
                 remaining_requests: 3 // Initially, remaining requests will be the same as allowed requests.
             };
-            console.log(newSubscription, "newSubscription")
             let subscription = await subscriptionService.addUserSubscription(newSubscription);
-            console.log(subscription, "rgdtfh")
             let updatenewuser = newuser
-            console.log(updatenewuser, "Wdefdgb")
             updatenewuser.active_susbscription_id = subscription.subscription_id;
             const user = await userService.updateUser(newuser.id, updatenewuser);
             res.status(201).json(user);
@@ -138,10 +134,8 @@ exports.getMyProfile = async (req, res) => {
 };
 
 exports.userLogin = async (req, res) => {
-    console.log(req.body,"dfgtyuy")
     try {
         const user = await userService.getUserByEmail(req.body.email);
-        console.log(user)
         if (user) {
             const isPasswordMatch = await bcrypt.compare(req.body.password, user.password);
             if (isPasswordMatch) {
@@ -195,3 +189,7 @@ exports.changePassword = async (req, res) => {
         return res.status(500).json({ error: "Internal Server Error", success: false });
     }
 };
+
+
+
+

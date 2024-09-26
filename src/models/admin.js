@@ -1,12 +1,11 @@
-const { DataTypes} = require("sequelize");
+const { DataTypes } = require("sequelize");
 const db = require("../../config/database");
 
+// Define the Admin model
 const Admin = db.define("Admin", {
-    name: { type:DataTypes.STRING},
-    phone_number : {type:DataTypes.STRING},
-    address: {type:DataTypes.STRING},
-    email:{ type: DataTypes.STRING, unique:true},
-    password: {type:DataTypes.STRING}
+  name: { type: DataTypes.STRING, allowNull: false },
+  email: { type: DataTypes.STRING, unique: true, allowNull: false },
+  password: { type: DataTypes.STRING, allowNull: false },
 });
 
-module.exports = Admin
+module.exports = Admin;

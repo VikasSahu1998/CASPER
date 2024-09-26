@@ -5,8 +5,8 @@ const Subscription = require("../models/subscription");
 const userService = require("../services/userService");
 
 exports.addUserSubscription = async (req, res) => {
-    expiryRangeMonth = { OneTime: 0, Basic: 1, Standard: 3, Advance: 5 };
-    allowedRequests = { [subscriptionTypes.FreeTrial]: 3, [subscriptionTypes.OneTime]: 0, [subscriptionTypes.Basic]: 10, [subscriptionTypes.Standard]: 15, [subscriptionTypes.Advance]: 20 }; // Define allowed requests for each subscription type.
+    expiryRangeMonth = { OneTime: 0, Basic: 1, Standard: 6, Advance: 12 };
+    allowedRequests = { [subscriptionTypes.FreeTrial]: 3, [subscriptionTypes.OneTime]: 0, [subscriptionTypes.Basic]: 2, [subscriptionTypes.Standard]: 5, [subscriptionTypes.Advance]: 10 }; // Define allowed requests for each subscription type.
 
     try {
         
@@ -23,23 +23,16 @@ exports.addUserSubscription = async (req, res) => {
             allowed_requests: allowedRequestsForType, // Set allowed requests.
             remaining_requests: allowedRequestsForType // Initially, remaining requests will be the same as allowed requests.
         };
-        console.log(newSubscription, "newSubs")
-
         if (req.body.subscription_type == "OneTime") {
             newSubscription.subscription_status = subscriptionStatus.EXPIRED;
         }
         if (req.body.subscribeAgain && req.body.isSubscribed) {
-
         }
-
         const subscription = await subscriptionService.addUserSubscription(newSubscription);
         let { dataValues: loggedInUser } = await userService.getUserById(req.user.id)
         loggedInUser.active_susbscription_id = subscription.dataValues.subscription_id;
-        console.log(loggedInUser,"logged")
         let user = await userService.updateUser(loggedInUser.id, loggedInUser);
-
         res.status(201).json(subscription);
-
     } catch (error) {
         res.status(500).json({ error: "Internal Error" });
     }
