@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const adminService = require('../services/adminService');
-const Admin = require('../models/Admin');
+const Admin = require('../models/admin');
 const jwtconfig = require("../../config/jwt"); // Ensure you have a file for jwt configuration
 
 async function seedAdminData() {
