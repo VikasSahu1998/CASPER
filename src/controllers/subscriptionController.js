@@ -5,8 +5,8 @@ const Subscription = require("../models/subscription");
 const userService = require("../services/userService");
 
 exports.addUserSubscription = async (req, res) => {
-    expiryRangeMonth = { OneTime: 0, Basic: 1, Standard: 6, Advance: 12 };
-    allowedRequests = { [subscriptionTypes.FreeTrial]: 3, [subscriptionTypes.OneTime]: 0, [subscriptionTypes.Basic]: 2, [subscriptionTypes.Standard]: 5, [subscriptionTypes.Advance]: 10 }; // Define allowed requests for each subscription type.
+    expiryRangeMonth = { OneTime: 0, Basic: 1, Standard: 3, Advance: 5 };
+    allowedRequests = { [subscriptionTypes.FreeTrial]: 3, [subscriptionTypes.OneTime]: 0, [subscriptionTypes.Basic]: 10, [subscriptionTypes.Standard]: 15, [subscriptionTypes.Advance]: 20 }; // Define allowed requests for each subscription type.
 
     try {
         
