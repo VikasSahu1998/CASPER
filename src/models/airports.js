@@ -15,6 +15,21 @@ const airportsData = {
       "airport_name": "PURI AIRPORT/Puri/BBI"
     },
     {
+      "airport_city": "Koppal",
+      "airport_icao": "VOKP",
+      "airport_name": "Baldota Koppal Airport/Koppal/OYR",
+    },
+    {
+      "airport_city": "Bhogapuram",
+      "airport_icao": "BPTM",
+      "airport_name": "Bhogapuram Airport/Bhogapuram/BPT",
+    },
+    {
+      "airport_city": "Dholera",
+      "airport_icao": "DOLL",
+      "airport_name": "Dholera International Airport/Dholera/DOL",
+    },
+    {
       "airport_city": "Mumbai",
       "airport_icao": "VABB",
       "airport_name": "Chhatrapati Shivaji Maharaj International Airport/Mumbai/BOM"
@@ -118,9 +133,9 @@ const airportsData = {
       "airport_name": "Balurghat Airport/Balurghat/BLT"
     },
     {
-      "airport_city": "Hirsar",
+      "airport_city": "Hirasar",
       "airport_icao": "VAHS",
-      "airport_name": "Hirsar Airport/Hirsar/HSR"
+      "airport_name": "RAJKOT INTERNATIONAL Airport/Hirasar/HSR"
 
     },
     {
@@ -177,11 +192,6 @@ const airportsData = {
       "airport_city": "Gaya",
       "airport_icao": "VEGY",
       "airport_name": "Gaya Airport/Gaya/GAY"
-    },
-    {
-      "airport_city": "Hisar",
-      "airport_icao": "VIHR",
-      "airport_name": "Hisar Airport/Hisar/HSR"
     },
     {
       "airport_city": "Hubli",
@@ -553,11 +563,11 @@ const airportsData = {
       "airport_icao": "VAPO",
       "airport_name": "Lohegaon Air Force/Pune/PNQ"
     },
-    {
-      "airport_city": "Cimbatore",
-      "airport_icao": "VOSX",
-      "airport_name": "Sulur Air Force/Cimbatore/"
-    },
+    // {
+    //   "airport_city": "Cimbatore",
+    //   "airport_icao": "VOSX",
+    //   "airport_name": "Sulur Air Force/Cimbatore/"
+    // },
     {
       "airport_city": "Arakkonnam",
       "airport_icao": "VOAR",
@@ -698,11 +708,11 @@ const airportsData = {
       "airport_icao": "VEAN",
       "airport_name": "Angul Airport/Angul/ANJ"
     },
-    {
-      "airport_city": "Koppal",
-      "airport_icao": "VOKL",
-      "airport_name": "Baldota Koppal Airport/Koppal/KLP"
-    },
+    // {
+    //   "airport_city": "Koppal",
+    //   "airport_icao": "VOKL",
+    //   "airport_name": "Baldota Koppal Airport/Koppal/KLP"
+    // },
     {
       "airport_city": "Beas",
       "airport_icao": "VOBX",

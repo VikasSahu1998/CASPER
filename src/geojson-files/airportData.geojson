@@ -16,6 +16,42 @@
     {
       "type": "Feature",
       "properties": {
+        "city": "Koppal",
+        "airportName": "Baldota Koppal Airport/Koppal/BYKD",
+        "siteElevation": 1732
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.2201, 15.3601]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Bhogapuram",
+        "airportName": "Bhogapuram Airport/Bhogapuram/BPT",
+        "siteElevation": 188
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9761, 83.5057]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "city": "Dholera",
+        "airportName": "Dholera International Airport/Dholera/DOL",
+        "siteElevation": 40
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.3611, 72.3002 ]
+      }
+    },        
+    {
+      "type": "Feature",
+      "properties": {
         "city": "Mumbai",
         "airportName": "Chhatrapati Shivaji Maharaj International Airport/Mumbai/BOM",
         "siteElevation": 40
@@ -989,13 +1025,13 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Hirsar",
-        "airportName": "Hirsar Airport/Hirsar/HSR",
+        "city": "Hirasar",
+        "airportName": "RAJKOT INTERNATIONAL Airport/Hirasar/HSR",
         "siteElevation": 0
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [29.1833, 75.7167]
+        "coordinates": [22.378824, 71.039391]
       }
     },
     {
@@ -1272,18 +1308,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [18.582222, 73.919722]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "Cimbatore",
-        "airportName": "Sulur Air Force/Cimbatore/",
-        "siteElevation": 410
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [11.013611, 77.159722]
       }
     },
     {
